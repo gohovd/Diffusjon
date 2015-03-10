@@ -112,12 +112,23 @@ public class Processing extends PApplet {
     public void placeCircles(MovingCircle instance){
         float currentX = instance.getX();
         float currentY = instance.getY();
+        float random;
         float previousX;
         float previousY;
 
         if(currentX == previousX || currentX == 200){
-
+            random = random(-1, 1);
+            if(random < 0){ currentX -= 1; } else currentX += 1;
+            instance.setX(currentX);
+            previousX = currentX;
         }
+        if(currentY == previousY || currentY == 200){
+            random = random(-1, 1);
+            if(random < 0){ currentY -= 1; } else currentY += 1;
+            instance.setY(currentY);
+            previousY = currentY;
+        }
+
     }
 
 
