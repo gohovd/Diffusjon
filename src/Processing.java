@@ -17,7 +17,7 @@ public class Processing extends PApplet {
 
     public void setup() {
         size(400, 400);
-        noStroke();
+        noStroke(); //BLIR IGNORERT
         smooth();
         for(int i=0; i<myCircleArray.length; i++) {
             myCircleArray[i] = new MovingCircle(200,200,10);
