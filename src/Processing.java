@@ -4,8 +4,6 @@ import processing.core.PApplet;
 public class Processing extends PApplet {
 
 
-    float x = 100;
-    float y = 100;
     float movement = 1;
 
     float xSpeed;
@@ -20,8 +18,7 @@ public class Processing extends PApplet {
     public void setup() {
         size(400, 400);
         noStroke();
-        x = width/2;
-        y = height/2;
+        smooth();
         for(int i=0; i<myCircleArray.length; i++) {
             myCircleArray[i] = new MovingCircle(200,200,10);
         }
@@ -40,6 +37,9 @@ public class Processing extends PApplet {
     }
 
     class MovingCircle {
+        float x;
+        float y;
+
 
         float circleSize;
 
@@ -48,8 +48,6 @@ public class Processing extends PApplet {
             y = ypos;
             circleSize = csize;
 
-            xSpeed = random(-10, 10);
-            ySpeed = random(-10, 10);
 
         }
 
