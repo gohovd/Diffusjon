@@ -4,10 +4,8 @@ import processing.core.PApplet;
 public class Processing extends PApplet {
 
 
-    float movement = 1;
 
-    float xSpeed;
-    float ySpeed;
+
     MovingCircle[] myCircleArray = new MovingCircle[100];
 
 
@@ -17,7 +15,7 @@ public class Processing extends PApplet {
 
     public void setup() {
         size(400, 400);
-        noStroke(); //BLIR IGNORERT
+        frameRate(10);
         smooth();
         for(int i=0; i<myCircleArray.length; i++) {
             myCircleArray[i] = new MovingCircle(200,200,10);
@@ -28,10 +26,11 @@ public class Processing extends PApplet {
     public void draw() {
         background(color(244,255,255));
         for(int i=0; i<myCircleArray.length; i++) {
-            myCircleArray[i] = new MovingCircle(200, 200, 10);
+            float r1 = random(100,300);
+            float r2 = random(100,300);
+            myCircleArray[i] = new MovingCircle(r1, r2, 2);
 
             myCircleArray[i].move();
-            myCircleArray[i].checkCollisions();
             myCircleArray[i].display();
         }
     }
@@ -43,6 +42,9 @@ public class Processing extends PApplet {
 
         float circleSize;
 
+        float xSpeed;
+        float ySpeed;
+
         MovingCircle(float xpos, float ypos, float csize) {
             x = xpos;
             y = ypos;
@@ -52,6 +54,7 @@ public class Processing extends PApplet {
         }
 
         void move() {
+            float movement = 1;
             float r = random(0, 4);
 
             if (r >= 0 && r < 1) {
@@ -89,7 +92,7 @@ public class Processing extends PApplet {
         void display() {
             fill(color(255,0,0));
 
-            ellipse(x, y, 2, 2);
+            ellipse(x, y, circleSize, circleSize);
 
 
         }
