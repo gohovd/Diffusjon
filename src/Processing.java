@@ -6,8 +6,6 @@ public class Processing extends PApplet {
 
     float movement = 1;
 
-    float xSpeed;
-    float ySpeed;
     MovingCircle[] myCircleArray = new MovingCircle[100];
 
 
@@ -31,7 +29,6 @@ public class Processing extends PApplet {
             myCircleArray[i] = new MovingCircle(200, 200, 10);
 
             myCircleArray[i].move();
-            myCircleArray[i].checkCollisions();
             myCircleArray[i].display();
         }
     }
@@ -69,20 +66,6 @@ public class Processing extends PApplet {
             if (r >= 3 && r < 4) {
                 x = x - movement;
             }
-        }
-
-        void checkCollisions() {
-
-            float r = circleSize/2;
-
-            if ( (x<r) || (x>width-r)){
-                xSpeed = -xSpeed;
-            }
-
-            if( (y<r) || (y>height-r)) {
-                ySpeed = -ySpeed;
-            }
-
         }
 
         void display() {

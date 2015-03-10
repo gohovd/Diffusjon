@@ -30,11 +30,11 @@
       <file leaf-file-name="Processing.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Processing.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8277027" vertical-offset="462" max-vertical-offset="1819">
-              <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+            <state vertical-scroll-proportion="-0.0050675673" vertical-offset="428" max-vertical-offset="1530">
+              <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
               <folding>
-                <element signature="e#242#243#0" expanded="true" />
-                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#206#207#0" expanded="true" />
+                <element signature="e#275#276#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -400,8 +400,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1054">
           <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -411,19 +411,19 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1054">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Processing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8277027" vertical-offset="462" max-vertical-offset="1819">
-          <caret line="56" column="34" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+        <state vertical-scroll-proportion="-0.0050675673" vertical-offset="428" max-vertical-offset="1530">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
           <folding>
-            <element signature="e#242#243#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#206#207#0" expanded="true" />
+            <element signature="e#275#276#0" expanded="true" />
           </folding>
         </state>
       </provider>
