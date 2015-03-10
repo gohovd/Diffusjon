@@ -6,6 +6,8 @@ public class Processing extends PApplet {
 
     float movement = 1;
 
+    float xSpeed;
+    float ySpeed;
     MovingCircle[] myCircleArray = new MovingCircle[100];
 
 
@@ -29,6 +31,7 @@ public class Processing extends PApplet {
             myCircleArray[i] = new MovingCircle(200, 200, 10);
 
             myCircleArray[i].move();
+            myCircleArray[i].checkCollisions();
             myCircleArray[i].display();
         }
     }
@@ -68,6 +71,21 @@ public class Processing extends PApplet {
             }
         }
 
+        void checkCollisions() {
+
+            float r = circleSize/2;
+
+            if ( (x<r) || (x>width-r)){
+                xSpeed = -xSpeed;
+            }
+
+            if( (y<r) || (y>height-r)) {
+                ySpeed = -ySpeed;
+            }
+
+
+        }
+
         void display() {
             fill(color(255,0,0));
 
@@ -76,7 +94,30 @@ public class Processing extends PApplet {
 
         }
 
+        float getX() {
+            return x;
+        }
+        float getY() {
+            return y;
+        }
+        void setX(float x){
+            this.x = x;
+        }
+        void setY(float y){
+            this.y = y;
+        }
 
+    }
+
+    public void placeCircles(MovingCircle instance){
+        float currentX = instance.getX();
+        float currentY = instance.getY();
+        float previousX;
+        float previousY;
+
+        if(currentX == previousX || currentX == 200){
+
+        }
     }
 
 
