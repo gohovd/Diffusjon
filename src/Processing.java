@@ -83,6 +83,7 @@ public class Processing extends PApplet {
                 ySpeed = -ySpeed;
             }
 
+
         }
 
         void display() {
@@ -93,7 +94,30 @@ public class Processing extends PApplet {
 
         }
 
+        float getX() {
+            return x;
+        }
+        float getY() {
+            return y;
+        }
+        void setX(float x){
+            this.x = x;
+        }
+        void setY(float y){
+            this.y = y;
+        }
 
+    }
+
+    public void placeCircles(MovingCircle instance){
+        float currentX = instance.getX();
+        float currentY = instance.getY();
+        float previousX;
+        float previousY;
+
+        if(currentX == previousX || currentX == 200){
+
+        }
     }
 
 
