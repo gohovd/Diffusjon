@@ -109,7 +109,7 @@ public class Processing extends PApplet {
 
     }
 
-    public void placeCircles(MovingCircle instance){
+    /*public void placeCircles(MovingCircle instance){
         float currentX = instance.getX();
         float currentY = instance.getY();
         float random;
@@ -129,7 +129,7 @@ public class Processing extends PApplet {
             previousY = currentY;
         }
 
-    }
+    }*/
 
 
 }
